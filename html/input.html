@@ -10,11 +10,21 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <!-- 其实select textarea都可以独立存在，在form中是需要提交表单在query string中用 -->
     <form>
         <label for="numChoice">Choose num:</label>
         <!-- name="chooseOne" 是只能选一个的关键 -->
+        <input name="chooseOne" id="numChoice" type="radio" value="realValue">
         <input name="chooseOne" id="numChoice" type="radio">
-        <input name="chooseOne" id="numChoice" type="radio">
+        <input type="submit"> 
+        <input type="password">
+        <!-- drop down menu -->
+        <!-- name 用与query string select=realRed -->
+        <select name="select" id="select">
+            <option value="realRed">red</option>
+            <option value="realBlue">blue</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
     </form>
 </body>
 </html>
